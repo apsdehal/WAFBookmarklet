@@ -83,7 +83,7 @@ dojo.declare("pundit.AuthenticatedRequests", pundit.BaseComponent, {
         var self = this,
         h = "<div id='pundit-login-popup-content' class='off tundra'>";
 
-        h += "<div class='off'><p>To view annotations on this page you must log in.</p></div>";
+        h += "<div class='off'><p>To view annotations and push them to Wikidata on this page you must log in.</p></div>";
         h += "<div class='waiting'><p>Please complete the process in the login window</p></div>";
         h += "<div class='logged'><p>You are logged in as:</p> <span class='username'>XYZ</span></div>";
 
@@ -180,9 +180,10 @@ dojo.declare("pundit.AuthenticatedRequests", pundit.BaseComponent, {
             url: ns.annotationServerUsersCurrent,
             handleAs: "json",
             headers: {
-                "Accept":"application/json"
+                "Accept":"application/json",
             },
             load: function(data) {
+                console.log(data);
                 if (typeof(data) === 'undefined' || typeof(data.loginStatus) === 'undefined') { 
                     data = {
                         loginStatus: 0
@@ -190,6 +191,7 @@ dojo.declare("pundit.AuthenticatedRequests", pundit.BaseComponent, {
                 }
                 
                 if (typeof(f) === 'function') {
+
                     f(data);
                     return;
                 } else if (data.loginStatus == 0) {
@@ -199,6 +201,7 @@ dojo.declare("pundit.AuthenticatedRequests", pundit.BaseComponent, {
                     }, self.opts.loginTimerMS);
                     return;
                 }
+                console.log(data);
                 self.login(data);
             },
             error: function(error) {}
@@ -206,7 +209,8 @@ dojo.declare("pundit.AuthenticatedRequests", pundit.BaseComponent, {
 
         self.xGet(args);
     }, // checkLogin()
-    
+
+
     login: function(data) {
         var self = this;
         
@@ -248,9 +252,10 @@ dojo.declare("pundit.AuthenticatedRequests", pundit.BaseComponent, {
                     self.fireOnLogout(data);
                 }
             },
-            error: function(error) {}
+            error: function(error) {
+                console.log(error);
+            }
         }
-
         self.xGet(args);
     },
 	

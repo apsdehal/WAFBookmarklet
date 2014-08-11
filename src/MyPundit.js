@@ -139,7 +139,7 @@ dojo.declare("pundit.MyPundit", pundit.BaseComponent, {
             //if (typeof(data.msg) !== 'undefined')
             //    dojo.query('#mySemlibInfoContainer').html(data.msg);
         }
-    },
+    },  
 
     initBehaviors: function() {
         var self = this;

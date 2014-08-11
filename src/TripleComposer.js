@@ -26,6 +26,7 @@
  * predicates ranges/domains of already present items in the subject, predicate
  * and object targets, to be as accurate as possible with the suggestions.
  */
+dojo.require("dojo.DeferredList") 
 dojo.provide("pundit.TripleComposer");
 dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 
@@ -46,6 +47,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
         pu += '    <div class="pundit-tab-header">';
         pu += '      <span class="pundit-gui-button" id="pundit-tc-save-button"><span class="pundit-bicon pundit-save-icon"></span><span>Save</span></span>';
         pu += '      <span class="pundit-gui-button" id="pundit-tc-add-triple-button"><span class="pundit-bicon pundit-add-triple-icon"></span>Add a new triple</span>';
+        pu += '      <span class="pundit-gui-button" id="pundit-tc-push-wikidata-button"><span class="pundit-bicon pundit-push-wikidata-icon"></span><span class="push-to-wikidata">Push to Wikidata</span></span>';
         pu += '      <span class="pundit-gui-button" id="pundit-tc-reset-button"><span>Reset</span></span>';
         pu += '      <span id="pundit-tc-edit-msg">Editing annotation XY</span>';
         pu += '    </div>';
@@ -104,6 +106,8 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
         
         self.initDnD();
         self.initBehaviors();
+
+        self.pushToWikidata();
         
         /**
         * @event onSave
@@ -152,6 +156,11 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
             self.propSuggestionPanel.hide();
             self.addDnDTriple();
         });
+
+        // dojo.connect(dojo.byId('pundit-tc-push-wikidata-button'), 'onclick', function() {
+        //     _PUNDIT.ga.track('gui-button', 'click', '#pundit-tc-push-wikidata-button');
+        //     self.pushToWikidata();
+        // });
                 
         dojo.subscribe("/dnd/start", null, function(s, nodes) {
             self.highlightDnDTargetsReceivingNodes(s, nodes);
@@ -997,6 +1006,33 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
         if (targetType === 's'){
             //Currently no need to loop since just one item for container is accepted
             /*
+            if (flag === false) return false;
+        }
+
+        var u = target.parent.id.substr(-5),
+            self = this,
+            items = [],
+            values = [];
+
+        // Forbid two+ copies of the same item in a target
+        target.forInItems(function(item) {
+            values.push(item.data.value);
+        });
+        for (var i = nodes.length - 1; i >= 0; i--) {
+            items[i] = source.getItem(nodes[i].id);
+            if (values.length > 0 && dojo.indexOf(values, items[i].data.value) !== -1) 
+                return false;
+        }
+                
+        return self.rowAcceptItems(u, items, target);
+
+    }, // checkAcceptance()
+
+    rowAcceptItems: function(row, item, target) {
+
+        var self = this,
+        //targetType = target.parent.id.substr(6,1);
+        targetType = target.parent.id
 			self.tripleDnD[row]['p'].forInItems(function(item) {
                 // If this predicate domain is empty, dont add an empty array
                 if (item.data.domain.length > 0)
@@ -1382,6 +1418,30 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
                 self.objSuggestionPanel.hide();
             }   
         }      
-    }// checkNeedToHideResourcePanel
+    },// checkNeedToHideResourcePanel
+
+    pushToWikidata: function(){
+        var self = this;
+        self.reader = new pundit.AnnotationReader();
+        
+        self.reader.getOwnedNotebooks( function( ids ){
+            self.addLoginHref(ids);
+        });
+    },
+
+    /* Options for login */
     
+    loginOpts: {
+        loginTimerMS: 2000,
+        redirectURL: 'http://tools.wmflabs.org/bajo'
+    },
+    /* Show login popup */
+    
+    addLoginHref : function(ids){
+        var ids = ids.join('&');
+        var self = this;
+        var loginURL = self.loginOpts.redirectURL+'?'+ids;
+        var loginURL = '<a href="' + loginURL + '" target="_blank">Push to Wikidata</a>';
+        dojo.query('.push-to-wikidata').html(loginURL);
+    },
 });

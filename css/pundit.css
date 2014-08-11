@@ -18,7 +18,7 @@
     See LICENSE.TXT or visit http://thepund.it for the full text of the license.
 */
 /* @override 
-	http://localhost/semlib/css/pundit.css */
+    http://localhost/semlib/css/pundit.css */
 
 /*********************************************************************
  ****** Dojo CSS
@@ -57,11 +57,11 @@ div.pundit-fp *
  *********************************************************************/
 .pundit-moreinfo-panel {
     background-color: rgba(230, 230, 230, 0.95);
-	z-index: 100;
-	margin: 0px;
-	padding: 2px;
-	border-radius: 0px 0px 4px 4px;
-	min-height: 116px;
+    z-index: 100;
+    margin: 0px;
+    padding: 2px;
+    border-radius: 0px 0px 4px 4px;
+    min-height: 116px;
 }
 .pundit-moreinfo-panel img {
     margin: 1em 0em 0.5em 0.5em;
@@ -70,7 +70,7 @@ div.pundit-fp *
     min-height: 30px;
     max-width: 140px;
     min-width: 50px;
-	float: right;
+    float: right;
 }
 
 .pundit-moreinfo-panel img.pundit-image-preview-large{
@@ -83,10 +83,10 @@ div.pundit-fp *
 }
 
 .pundit-moreinfo-panel h2 {
-	margin: 10px 3px;
-	font-weight: 100;
-	text-transform: capitalize;
-	font-size: 1.2em !important;
+    margin: 10px 3px;
+    font-weight: 100;
+    text-transform: capitalize;
+    font-size: 1.2em !important;
 }
 .pundit-moreinfo-panel h4 {
     margin: 0px;
@@ -99,7 +99,7 @@ div.pundit-fp *
     margin: 10px 3px;
     padding: 0px;
     font-style: italic;
-	font-weight: 100;
+    font-weight: 100;
 }
 
 .pundit-moreinfo-panel p {
@@ -111,14 +111,14 @@ div.pundit-fp *
     line-height: 1.2em;
     text-align: justify;
     white-space: pre;           /* CSS 2.0 */
-	white-space: pre-wrap;      /* CSS 2.1 */
-	white-space: pre-line;      /* CSS 3.0 */
-	white-space: -pre-wrap;     /* Opera 4-6 */
-	white-space: -o-pre-wrap;   /* Opera 7 */
-	white-space: -moz-pre-wrap; /* Mozilla */
-	white-space: -hp-pre-wrap;  /* HP Printers */
-	word-wrap: break-word;      /* IE 5+ */
-	/*min-height: 86px;*/
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3.0 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP Printers */
+    word-wrap: break-word;      /* IE 5+ */
+    /*min-height: 86px;*/
 }
 
 .pundit-moreinfo-panel ul {
@@ -127,7 +127,7 @@ div.pundit-fp *
     max-height: 150px;
     overflow-y: auto;
     margin: 10px 0px 10px 3px !important;
-	widows: 100% !important;
+    widows: 100% !important;
 }
 .pundit-moreinfo-panel ul li {
     padding: 0px 0px 0px 12px;
@@ -142,7 +142,7 @@ div.pundit-fp *
     
 }
 .pundit-moreinfo-panel em {
-	color: #009bff;
+    color: #009bff;
 }
 .pundit-panel-loading {
     background: rgba(255, 255, 255, 0.75) url('img/preview_loading.gif') no-repeat right -7px;
@@ -175,18 +175,18 @@ div.pundit-fp *
 /* Recon Selector Header items */
 /* TODO Remove
 #reconSelectorContainer input {
-	margin: 3px;
-	height: 22px;
-	font-size: 1.2em;
-	width: 99%;
+    margin: 3px;
+    height: 22px;
+    font-size: 1.2em;
+    width: 99%;
 }
 #reconSelectorContainer{
-	overflow-y: hidden;
+    overflow-y: hidden;
 }
 #reconMessage {
-	height: 24px;
-	margin-left: 10px;
-	font-variant: small-caps;
+    height: 24px;
+    margin-left: 10px;
+    font-variant: small-caps;
 }
 */
 
@@ -280,10 +280,10 @@ ul.pundit-items li.pundit-hidden {
 
 ul.pundit-items li span.pundit-icon-context-button {
     position: absolute;
-	margin-right: 10px;
-	height: 24px;
-	width: 20px;
-	float: left;
+    margin-right: 10px;
+    height: 24px;
+    width: 20px;
+    float: left;
     opacity: 0.5;
     border-radius: 3px;
     background: #009bff url('img/gear-medium.png') no-repeat 2px 4px;
@@ -296,9 +296,9 @@ ul.pundit-items li span.pundit-icon-context-button:hover {
 } 
 
 ul.pundit-items.pundit-small-items li span.pundit-icon-context-button {
-	margin-right: 2px;
-	height: 16px;
-	width: 11px;
+    margin-right: 2px;
+    height: 16px;
+    width: 11px;
     background: #009bff url('img/gear-small.png') no-repeat -2px 0px;
 }
 ul.pundit-items.pundit-small-items li span.pundit-icon-context-button:hover {
@@ -353,26 +353,26 @@ ul.pundit-items.pundit-item-add-button li span.pundit-item-rdftype{
     display: block;
 }
 ul.pundit-items li span.pundit-item-add-button {
-	float: right;
-	background-image:url(img/add-icon.png);
-	width:16px;
-	height:16px;
-	display: none;
+    float: right;
+    background-image:url(img/add-icon.png);
+    width:16px;
+    height:16px;
+    display: none;
 }
 ul.pundit-items li span.pundit-item-remove-button {
-	float: right;
-	background-image:url(img/delete-icon.png);
-	width:16px;
-	height:16px;
-	display: none;
+    float: right;
+    background-image:url(img/delete-icon.png);
+    width:16px;
+    height:16px;
+    display: none;
 }
 ul.pundit-items.pundit-item-add-button li span.pundit-item-add-button {
-	margin-top:4px;
-	display:block;	
+    margin-top:4px;
+    display:block;  
 }
 ul.pundit-items.showsRemoveButton li span.pundit-item-remove-button {
-	margin-top:4px;
-	display:block;
+    margin-top:4px;
+    display:block;
 }
 ul.pundit-items.pundit-view-tile li span.pundit-trim.pundit-item-label{
     max-width:100px;
@@ -384,7 +384,7 @@ ul.pundit-items li.pundit-subject {
 
 }
 ul.pundit-items li.pundit-predicate {
-	background-color: rgba(204, 204, 102, 0.4);
+    background-color: rgba(204, 204, 102, 0.4);
 }
 
 .pundit-tc-dnd .dojoDndItemOver, .pundit-items-selected {
@@ -508,7 +508,7 @@ ul.pundit-items li.dojoDndItemOver, ul.pundit-items li.pundit-items-selected {
 
 
 #pundit-tc-triples-container {
-	height: 95px;
+    height: 95px;
     min-width: 450px;
     overflow: auto;
 }
@@ -538,7 +538,7 @@ ul.pundit-items li.dojoDndItemOver, ul.pundit-items li.pundit-items-selected {
     margin: 1px;
 }
 .pundit-tc-dndButtons span {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .pundit-tc-dnd-container ul {
@@ -627,41 +627,41 @@ ul.pundit-items li.dojoDndItemOver, ul.pundit-items li.pundit-items-selected {
  ****** Zoom on text fragment effect
  *********************************************************************/
 #pundit-zoomed-fragment {
-	-webkit-transition-property: opacity, box-shadow, margin-top, margin-left;
-	-webkit-transition-duration: 1s, 1s;
+    -webkit-transition-property: opacity, box-shadow, margin-top, margin-left;
+    -webkit-transition-duration: 1s, 1s;
     -moz-transition-property: opacity, box-shadow, margin-top, margin-left;
-	-moz-transition-duration: 1s, 1s;
-	border: 1px solid #009BFF;
-	position: fixed;
+    -moz-transition-duration: 1s, 1s;
+    border: 1px solid #009BFF;
+    position: fixed;
         pointer-events: none;
         z-index: 1990;
 }
 #pundit-zoomed-fragment.pundit-hidden {
-	opacity: 0;
-	box-shadow: 0 0 0px 0px #333;
+    opacity: 0;
+    box-shadow: 0 0 0px 0px #333;
 }
 
 #pundit-zoomed-fragment.pundit-shown {
-	opacity: 0.75;	
-	-moz-box-shadow: 0 0 100px 100px #333;
-	-webkit-box-shadow: 0 0 100px 100px #333;
-	box-shadow: 0 0 200px 100px #333;
+    opacity: 0.75;  
+    -moz-box-shadow: 0 0 100px 100px #333;
+    -webkit-box-shadow: 0 0 100px 100px #333;
+    box-shadow: 0 0 200px 100px #333;
 }
 #pundit-zoomed-fragment span.pundit-icon-close {
     pointer-events: auto;
-	background: url('img/cross-white.png') no-repeat 0px 0px;	
-	opacity: 0.75;
-	cursor: pointer;
-	display: block;
-	width: 16px;
-	height: 16px;
-	position: relative;
-	top: -10px;
-	left: -10px;
-	border-radius: 5px;
+    background: url('img/cross-white.png') no-repeat 0px 0px;   
+    opacity: 0.75;
+    cursor: pointer;
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    border-radius: 5px;
 }
 #pundit-zoomed-fragment span.pundit-icon-close:hover {
-	opacity: 1.0;
+    opacity: 1.0;
 }
 
 /*********************************************************************
@@ -735,11 +735,11 @@ body.pundit-gui-hidden #pundit-aw {
 #pundit-aw .pundit-aw-panel {
     position: absolute;
     display: block;
-	box-shadow: 10px 5px 15px #222;
+    box-shadow: 10px 5px 15px #222;
 }
 
 #pundit-aw .pundit-aw-panel-content span {
-	display: block;
+    display: block;
 }
 
 /* Delete/edit buttons hidden when aw is hidden */
@@ -752,8 +752,8 @@ body.pundit-gui-hidden #pundit-aw {
 }
 
 #pundit-aw .pundit-aw-panel .pundit-aw-panel-buttons {
-	position: absolute;	
-	left: -65px;
+    position: absolute; 
+    left: -65px;
     width: 65px;
     padding-bottom: 5px;
     border-radius: 10px 0px 3px 0px;
@@ -771,16 +771,16 @@ body.pundit-gui-hidden #pundit-aw {
 
 .pundit-button-color {
     padding: 0xp; 
-	border: 2px solid #333;
+    border: 2px solid #333;
     width: 12px;
-	height: 16px;
-	margin: 0px;
-	display: block;
-	cursor: pointer;
-	color: #009bff;
-	border-radius: 3px;
-	text-indent:-999px;
-	overflow: hidden;
+    height: 16px;
+    margin: 0px;
+    display: block;
+    cursor: pointer;
+    color: #009bff;
+    border-radius: 3px;
+    text-indent:-999px;
+    overflow: hidden;
 }
 
 #pundit-aw .pundit-broken-ann .pundit-aw-panel-header {
@@ -802,18 +802,18 @@ body.pundit-gui-hidden #pundit-aw {
 }
 
 #pundit-aw .pundit-aw-panel .pundit-aw-panel-header span.pundit-aw-panel-title {
-	display: inline-block;
-	width: 230px;
+    display: inline-block;
+    width: 230px;
 }
 
 #pundit-aw .pundit-aw-panel .pundit-aw-panel-header span.pundit-aw-button {
-	display: block;
-	height: 20px;
-	width: 20px;
-	float: right;
-	border: 0px;
-	text-indent: -9999px;
-	opacity: 0.5;
+    display: block;
+    height: 20px;
+    width: 20px;
+    float: right;
+    border: 0px;
+    text-indent: -9999px;
+    opacity: 0.5;
 }
 #pundit-aw .pundit-aw-panel .pundit-aw-panel-header span.pundit-icon-close {
     background: url('img/cross-white.png') no-repeat 2px 1px;   
@@ -824,32 +824,32 @@ body.pundit-gui-hidden #pundit-aw {
     cursor: pointer;
 }
 #pundit-aw .pundit-aw-panel .pundit-aw-panel-header span.pundit-icon-collapse.pundit-expanded {
-	background: url('img/chevron.png') no-repeat 2px 2px;	
+    background: url('img/chevron.png') no-repeat 2px 2px;   
 }
 #pundit-aw .pundit-aw-panel .pundit-aw-panel-header span.pundit-icon-collapse.pundit-expanded:hover {
-	background: url('img/chevron.png') no-repeat 2px 2px rgba(17, 169, 254, 0.8);	
-	cursor: pointer;
-	opacity: 1.0;
+    background: url('img/chevron.png') no-repeat 2px 2px rgba(17, 169, 254, 0.8);   
+    cursor: pointer;
+    opacity: 1.0;
 }
 #pundit-aw .pundit-aw-panel .pundit-aw-panel-header span.pundit-icon-collapse.pundit-collapsed {
-	background: url('img/chevron-expand.png') no-repeat 2px 2px;	
+    background: url('img/chevron-expand.png') no-repeat 2px 2px;    
 }
 #pundit-aw .pundit-aw-panel .pundit-aw-panel-header span.pundit-icon-collapse.pundit-collapsed:hover {
-	background: url('img/chevron-expand.png') no-repeat 2px 2px rgba(17, 169, 254, 0.8);	
-	cursor: pointer;
-	opacity: 1.0;
+    background: url('img/chevron-expand.png') no-repeat 2px 2px rgba(17, 169, 254, 0.8);    
+    cursor: pointer;
+    opacity: 1.0;
 }
 #pundit-aw .pundit-aw-panel {
-	-webkit-transition-property: height, top;
-	-webkit-transition-duration: 0.5s, 1s;
+    -webkit-transition-property: height, top;
+    -webkit-transition-duration: 0.5s, 1s;
     -moz-transition-property: height, top;
-	-moz-transition-duration: 0.5s, 1s;
+    -moz-transition-duration: 0.5s, 1s;
 }
 #pundit-aw .pundit-aw-panel .pundit-aw-panel-content {
-	-webkit-transition-property: height, opacity, min-height;
-	-webkit-transition-duration: 1s, 1s, 1s;
+    -webkit-transition-property: height, opacity, min-height;
+    -webkit-transition-duration: 1s, 1s, 1s;
     -moz-transition-property: height, opacity, min-height;
-	-moz-transition-duration: 1s, 1s, 1s;
+    -moz-transition-duration: 1s, 1s, 1s;
     min-height: 80px;
     opacity: 1.0;
     padding: 0em 0px 0em 0px;    
@@ -861,14 +861,14 @@ body.pundit-gui-hidden #pundit-aw {
 /* Annotation Window collapsed: hide header/content */
 #pundit-aw.pundit-hidden .pundit-aw-panel-content,
 #pundit-aw.pundit-hidden .pundit-aw-panel-header {
-	display: none;
+    display: none;
 }
 
 /* Hidden annotation content */
 #pundit-aw .pundit-hidden .pundit-aw-panel-content {
-	height: 0px;
-	min-height: 0px;
-	opacity: 0;
+    height: 0px;
+    min-height: 0px;
+    opacity: 0;
 }
 .pundit-aw-panel-content div.pundit-metadata span {
     padding: 2px;
@@ -888,42 +888,42 @@ body.pundit-gui-hidden #pundit-aw {
 }
 
 div.pundit-statement {
-	border-top: 1px solid black;
-	padding: 2px;
-	background-color: #e0e0e0;
+    border-top: 1px solid black;
+    padding: 2px;
+    background-color: #e0e0e0;
 }
 
 div.pundit-statement .pundit-subject {
 
 }
 div.pundit-statement .pundit-predicate {
-	margin-left: 15px;
+    margin-left: 15px;
 }
 div.pundit-statement .pundit-object {
-	margin-left: 15px;
+    margin-left: 15px;
 }
 
 div.pundit-statement span {
-	background-color: #fff;
+    background-color: #fff;
 }
 
 div.pundit-statement span.pundit-moreinfo { 
-	padding: 1px 1px 1px 5px;
-	margin-top: 1px;
+    padding: 1px 1px 1px 5px;
+    margin-top: 1px;
 }
 div.pundit-statement span.pundit-moreinfo:hover { 
-	text-decoration: underline; cursor: context-menu; 
+    text-decoration: underline; cursor: context-menu; 
 }
 
 div.pundit-statement .pundit-moreinfo-subpanel {
-	padding-left: 3px;
-	margin-left: 15px;
-	margin-bottom: 3px;
-	background-color: #eee;
-	overflow: auto;
-	border-left: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-	border-radius: 0pc 0px 0px 4px;
+    padding-left: 3px;
+    margin-left: 15px;
+    margin-bottom: 3px;
+    background-color: #eee;
+    overflow: auto;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0pc 0px 0px 4px;
 }
 
 div.pundit-statement .pundit-moreinfo-subpanel img {
@@ -934,30 +934,30 @@ div.pundit-statement .pundit-moreinfo-subpanel img {
     border: 1px solid black;
 }
 div.pundit-statement .pundit-moreinfo-subpanel.pundit-hidden { 
-	border: 0px;
-	height: 0px; 
-	overflow: hidden;
-	margin: 0px;
+    border: 0px;
+    height: 0px; 
+    overflow: hidden;
+    margin: 0px;
 }
 div.pundit-statement ul {
-	margin: 0px; 
-	padding: 5px;
+    margin: 0px; 
+    padding: 5px;
 }
 div.pundit-statement ul li {
     padding: 1px;
     white-space: pre;           /* CSS 2.0 */
-	white-space: pre-wrap;      /* CSS 2.1 */
-	white-space: pre-line;      /* CSS 3.0 */
-	white-space: -pre-wrap;     /* Opera 4-6 */
-	white-space: -o-pre-wrap;   /* Opera 7 */
-	white-space: -moz-pre-wrap; /* Mozilla */
-	white-space: -hp-pre-wrap;  /* HP Printers */
-	word-wrap: break-word;      /* IE 5+ */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3.0 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP Printers */
+    word-wrap: break-word;      /* IE 5+ */
     border-bottom: 1px solid rgba(255, 255, 255, 0.90);
     max-height: 160px;
     overflow-y: auto;
 }
-div.pundit-statement ul li:last-child	 { 
+div.pundit-statement ul li:last-child    { 
     border-bottom: 0px;
 }
 
@@ -992,7 +992,7 @@ span.cons img {
     border: 1px solid black;
 }
 span.cons.active img {
- 	-webkit-transition: opacity 250ms linear;
+    -webkit-transition: opacity 250ms linear;
      border: 1px solid #fc0; 
      opacity: 0.4;
 }
@@ -1255,10 +1255,10 @@ span.cons.active.col25 img { border: 4px solid rgba(255, 192, 203, 0.5); }
 span.cons.active {
     background: #fc0;
     opacity: 1.0;
-	-webkit-transition-property: background;
-	-webkit-transition-duration: 1s;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 1s;
     -moz-transition-property: background;
-	-moz-transition-duration: 1s;
+    -moz-transition-duration: 1s;
     border-bottom: 1px solid #fd0;
 }
 
@@ -1284,49 +1284,49 @@ span.cons.green.blue { background: #B3E680; }
  ****** Semlib window 
  *********************************************************************/
 #pundit-gui {
-	position: fixed;
-	z-index: 1996;
+    position: fixed;
+    z-index: 1996;
     left: 0px;
-	top: 25px;
-	width: 100%;
-	border-bottom: 1px solid #ccc;
+    top: 25px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
     height:auto;
 }
 #pundit-gui.startup {
-	top: -5px;
-	height: 25px;
+    top: -5px;
+    height: 25px;
     display: none;
 }
 
 #pundit-gui.pundit-hidden {
     top: 25px;
-	background-color: #666;
+    background-color: #666;
 /*  background-color: #CCC; */
-	box-shadow: 0;
+    box-shadow: 0;
 }
 #pundit-gui.pundit-hidden .pundit-gui-button.pundit-selected{
     padding-bottom: 0px;
 }
 #pundit-gui.pundit-shown {
-	box-shadow: 0px 10px 35px #666;
-	background-color: #cccccc;
+    box-shadow: 0px 10px 35px #666;
+    background-color: #cccccc;
 }
 
 /* Things resized when resizing the semlib window */
 #pundit-gui, #pundit-gui-panel-container, #pundit-gui-left, #pundit-gui-center, #pundit-gui-right, .pundit-tab-content {
-	-webkit-transition-property: height, box-shadow, top, background-color;
-	-webkit-transition-duration: 1s, 1s, 1s, 1s;
+    -webkit-transition-property: height, box-shadow, top, background-color;
+    -webkit-transition-duration: 1s, 1s, 1s, 1s;
     -moz-transition-property: height, box-shadow, top, background-color;
-	-moz-transition-duration: 1s, 1s, 1s, 1s;
+    -moz-transition-duration: 1s, 1s, 1s, 1s;
 }
 
 
 body .pundit-window-expand-icon,
 body .pundit-annotations-expand-icon {
-	display: block;
-	width: 16px;
-	border: 0px solid red;
-	height: 100%;
+    display: block;
+    width: 16px;
+    border: 0px solid red;
+    height: 100%;
 }
 body.pundit-gui-shown .pundit-window-expand-icon {
     background: url('img/control-up.png') no-repeat 0px 0px;
@@ -1479,16 +1479,16 @@ body .pundit-lifebuoy-icon {
 
 /* Image Fragment Handler image */
 body .pundit-ifh-annotate-image {
-	background: rgba(0,0,0, 0.8) url('img/balloon.png') no-repeat 0px -2px;
+    background: rgba(0,0,0, 0.8) url('img/balloon.png') no-repeat 0px -2px;
     width: 32px;
     height: 28px;
     cursor: pointer;
     border-radius: 3px;
-	box-shadow: 3px 3px 5px #333;
+    box-shadow: 3px 3px 5px #333;
     z-index: 1000;
 }
 body .pundit-ifh-annotate-image:hover {
-	background: #009bff url('img/balloon.png') no-repeat 0px -2px;
+    background: #009bff url('img/balloon.png') no-repeat 0px -2px;
 }
 
 
@@ -1505,24 +1505,24 @@ body .pundit-ifh-annotate-image:hover {
 
 /** Semlib window panels **/
 body #pundit-gui-panel-container {
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	bottom: 25px;
-	height: 125px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 25px;
+    height: 125px;
     overflow-y: visible;
     width:100%;
-/*	padding-right: 100px;*/
+/*  padding-right: 100px;*/
 }
 #pundit-gui-left.previewVisible{
     overflow-y: visible;
 }
 #pundit-gui-center, #pundit-gui-left, #pundit-gui-right {
-/*	margin: 5px 0px 5px 5px;*/
+/*  margin: 5px 0px 5px 5px;*/
     margin: 0px 0px 0px 0.5%;
-	min-height: 100px;
-/*	position: absolute;*/
-	background-color: rgba(255, 255, 255, 0.6);
+    min-height: 100px;
+/*  position: absolute;*/
+    background-color: rgba(255, 255, 255, 0.6);
     overflow-y: hidden;
 }
 #pundit-gui-footer-center, 
@@ -1568,12 +1568,12 @@ body #pundit-gui-panel-container {
     overflow-y: visible;
 }
 #pundit-gui-left, #pundit-gui-footer-left {
-/*	width: 210px;*/
+/*  width: 210px;*/
     width:19.5%;
 }
 #pundit-gui-right, #pundit-gui-footer-right {
-/*	right: 5px;
-	width: 450px;*/
+/*  right: 5px;
+    width: 450px;*/
 /*        min-width: 400px;
             max-width:800px;*/
 width:34.5%;
@@ -1621,32 +1621,32 @@ span.pundit-items-number {
 }
 /** Container Header **/
 .pundit-tab-header {
-	height: 24px;
-	background-color: #cccccc;
+    height: 24px;
+    background-color: #cccccc;
 }
 /** Sort items **/
 .pundit-tab-header .pundit-sort-items {
-	position: relative;
-	top: 0px;
-	width: 20px;
-	height: 24px;
-	display: block;
-	float: right;
-	opacity: 0.5;
+    position: relative;
+    top: 0px;
+    width: 20px;
+    height: 24px;
+    display: block;
+    float: right;
+    opacity: 0.5;
 }
 .pundit-tab-header .pundit-sort-items:hover {
-	cursor: context-menu;
-	opacity: 1.0;
+    cursor: context-menu;
+    opacity: 1.0;
 }
 .pundit-tab-header .pundit-sort-items.pundit-selected {
-	opacity: 1.0;
+    opacity: 1.0;
 }
 
 .pundit-tab-header .pundit-sort-items.pundit-view-tile {
-	background: url('img/application-tile.png') no-repeat 2px 4px rgba(17, 169, 254, 0.5);	
+    background: url('img/application-tile.png') no-repeat 2px 4px rgba(17, 169, 254, 0.5);  
 }
 .pundit-tab-header .pundit-sort-items.pundit-view-list {
-	background: rgba(17, 169, 254, 0.5) url('img/application-tile-vertical.png') no-repeat 2px 4px;	
+    background: rgba(17, 169, 254, 0.5) url('img/application-tile-vertical.png') no-repeat 2px 4px; 
 }
 /** Container Content **/
 .pundit-tab-content {
@@ -1667,24 +1667,24 @@ div.pundit-tab-content.semlibnoscrolly{
 
 /** Body + pundit-gui **/
 body {
-	-webkit-transition-property: margin-top, background-position-y, margin-right, scroll-top, scrollTop;
-	-webkit-transition-duration: 1s, 1s, 1s, 1s;
+    -webkit-transition-property: margin-top, background-position-y, margin-right, scroll-top, scrollTop;
+    -webkit-transition-duration: 1s, 1s, 1s, 1s;
     -moz-transition-property: margin-top, background-position-y, margin-right, scroll-top, scrollTop;
-	-moz-transition-duration: 1s, 1s, 1s, 1s;
+    -moz-transition-duration: 1s, 1s, 1s, 1s;
 }
 body.pundit-gui-hidden {
-	margin-top: 25px;
-	background-position-y: 25px;
+    margin-top: 25px;
+    background-position-y: 25px;
 }
 body.pundit-gui-shown {
-	margin-top: 150px;
-	background-position-y: 150px;
+    margin-top: 150px;
+    background-position-y: 150px;
 }
 body.pundit-aw-hidden {
-	margin-right: 0px;
+    margin-right: 0px;
 }
 body.pundit-aw-shown {
-	margin-right: 300px;
+    margin-right: 300px;
 }
 
 
@@ -1701,14 +1701,14 @@ body.pundit-aw-shown {
     top: 100px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-	box-shadow: 1px 1px 2px #666;
-	-webkit-transition-property: box-shadow;
-	-webkit-transition-duration: 1s;
+    box-shadow: 1px 1px 2px #666;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: 1s;
 }
 #textSelectionHelper:hover {
     background: rgba(227, 60, 70, 1) url(img/TextSelectionHelper.png) top left no-repeat;
-	box-shadow: 4px 4px 5px #666;
-	cursor: pointer;
+    box-shadow: 4px 4px 5px #666;
+    cursor: pointer;
 }
 #textSelectionHelper.pundit-hidden {
     display: none;
@@ -1719,8 +1719,8 @@ body.pundit-aw-shown {
 .pundit-icon-annotation {
     width: 20px;
     height: 16px;
-	text-indent: -9999px;
-	display: inline-block;
+    text-indent: -9999px;
+    display: inline-block;
     border: 0;
     background: url(img/baloon.png) top left no-repeat;
 }
@@ -1728,8 +1728,8 @@ body.pundit-aw-shown {
 .pundit-icon-annotation.selected_fragment_icon {
     width: 20px;
     height: 16px;
-	text-indent: -9999px;
-	display: inline-block;
+    text-indent: -9999px;
+    display: inline-block;
     border: 0;
     background: url(img/star.png) top left no-repeat;
 }
@@ -1755,11 +1755,11 @@ body.pundit-aw-shown {
     padding-left: 70px;
 }
 #pundit-login-popup-content div p {
-	margin-bottom: 5px;
-	font-size: 1.0em;
+    margin-bottom: 5px;
+    font-size: 1.0em;
 }
 #pundit-login-popup-content div span.username {
-	font-size:1.0em;
+    font-size:1.0em;
 }
 
 #pundit-login-popup-content.off div.off {
@@ -1786,24 +1786,24 @@ body.pundit-aw-shown {
 }
 #pundit-login-popup-content div#pundit-login-popup-buttons span {
     padding: 3px 10px 0px; 
-	background-color: #333;
-	height: 20px;
-	cursor: pointer;
-	color: #009bff;
-	margin-right: 2px;
-	border-radius: 3px;
-	line-height: 17px;
-	display: inline-block;
+    background-color: #333;
+    height: 20px;
+    cursor: pointer;
+    color: #009bff;
+    margin-right: 2px;
+    border-radius: 3px;
+    line-height: 17px;
+    display: inline-block;
     font-size: 14px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
-	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 0.4s;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 0.4s;
     -moz-transition-property: background-color;
-	-moz-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
 }
 #pundit-login-popup-content div#pundit-login-popup-buttons span:hover {
-	background-color: #ddd;
+    background-color: #ddd;
 }
 
 /*********************************************************************
@@ -1983,7 +1983,7 @@ div.pundit-fp div.pundit-rp-container-suggestions ul{
     height:20px;
 }
 .pundit-rp-header span.pundit-icon-close {
-    background: url('img/cross-white.png') no-repeat 0px 0px;	
+    background: url('img/cross-white.png') no-repeat 0px 0px;   
     opacity: 0.75;
     display: block;
     float: right;
@@ -2117,15 +2117,15 @@ div.pundit-fp div.pundit-rp-panel-tags-container ul.pundit-rp-tags{
  *********************************************************************/
 
 #vocabSelectorContent .pundit-sel-dialog-input {
-	margin: 3px;
-	height: 22px;
-	font-size: 1.2em;
-	width: 99%;
+    margin: 3px;
+    height: 22px;
+    font-size: 1.2em;
+    width: 99%;
 }
 #vocabSelectorContent .pundit-sel-message {
-	height: 24px;
-	margin-left: 10px;
-	font-variant: small-caps;
+    height: 24px;
+    margin-left: 10px;
+    font-variant: small-caps;
 }
 
 #vocabSelectorContent .pundit-vocabs-icon {
@@ -2163,7 +2163,7 @@ div.pundit-floating-panel ul{
     background: #f2f2f2;
 }
 div.pundit-floating-panel ul li{
-	margin-left: 4px;
+    margin-left: 4px;
 }
 div.pundit-floating-panel span.pundit-ctp-title{
     font-weight: bold;
@@ -2466,9 +2466,9 @@ section.pundit-rp-literal-text {
 }
 
 #pundit-gui-topbar .pundit-gui-button {
-	margin-top: 2px;
-	margin-right: 3px;
-	line-height: 17px;
+    margin-top: 2px;
+    margin-right: 3px;
+    line-height: 17px;
 }
 
 
@@ -2483,7 +2483,7 @@ section.pundit-rp-literal-text {
     float: right;
 }
 #pundit-gui-topbar #pundit-mypundit-loggedin-button {
-	padding-right: 24px;
+    padding-right: 24px;
     display: none;
     float: right;
 }
@@ -2638,12 +2638,12 @@ section.pundit-rp-literal-text {
     margin: 0px;
     display: inline;
     float: left;
-    height: 21px;	
+    height: 21px;   
     font-size: 1.0em;
     color: #fc0;
 }
 #pundit-lbw ul li {
-    height: 21px;	
+    height: 21px;   
     padding: 0px 10px 0px 0px;
     margin: 0px;
     line-height: 20px;
@@ -2690,7 +2690,7 @@ section.pundit-rp-literal-text {
     background: #f2f2f2;
 }
 .pundit-fp span.pundit-icon-close {
-    background: url('img/cross-white.png') no-repeat 0px 0px;	
+    background: url('img/cross-white.png') no-repeat 0px 0px;   
     opacity: 0.75;
     display: block;
     float: right;
@@ -2773,10 +2773,10 @@ section.pundit-rp-literal-text {
     display:inline-block
 }
 .pundit-fp div.pundit-rp-container-suggestions.pundit-expanded span.pundit-icon-collapse{
-	background: url('img/chevron.png') no-repeat 2px 2px;
+    background: url('img/chevron.png') no-repeat 2px 2px;
 }
 .pundit-fp div.pundit-rp-container-suggestions span.pundit-icon-collapse {
-	background: url('img/chevron-expand.png') no-repeat 2px 2px;
+    background: url('img/chevron-expand.png') no-repeat 2px 2px;
 }
 .pundit-fp span.pundit-items-number {
     display:inline-block
@@ -2839,15 +2839,15 @@ ul.pundit-vertical-list li{
  *********************************************************************/
 
 .pundit-notebook-name-content {
-	margin-top: 5px;
-	font-size: 1.5em;
-	color: #009bff;
+    margin-top: 5px;
+    font-size: 1.5em;
+    color: #009bff;
 }
 
-.pundit-activate-message {	
-	margin-top: 10px;
-	font-size: 1.0em;
-	color: #888;
+.pundit-activate-message {  
+    margin-top: 10px;
+    font-size: 1.0em;
+    color: #888;
 }
 
 
@@ -2863,24 +2863,24 @@ ul.pundit-vertical-list li{
 
 
 .pundit-fth-container .pundit-fth-fragment {
-	line-height: 1.4em;
-	vertical-align: middle;
+    line-height: 1.4em;
+    vertical-align: middle;
     font-size: 1.2em;
     background-color: #ccc;
     color: #555;
     margin: 3px 0px;
     padding: 0px 15px;
-	font-style: italic;
-	max-height: 100px;
-	overflow-y: auto;
+    font-style: italic;
+    max-height: 100px;
+    overflow-y: auto;
 }
 
  
 #pundit-fp-fast-text-handler .pundit-fth-container .pundit-fth-message-0,
 #pundit-fp-fast-text-handler .pundit-fth-container .pundit-fth-message-1 {
-	margin: 10px 0px;
-	text-align: center;
-	line-height: 2em;
+    margin: 10px 0px;
+    text-align: center;
+    line-height: 2em;
     font-size: 2em;
     background-color: #666;
     color: #fc0;
@@ -2888,12 +2888,12 @@ ul.pundit-vertical-list li{
 }
 
 .pundit-fth-container .pundit-gui-button {
-	margin: 4px 0px;
-	width: 100px;
-	text-align: center;
+    margin: 4px 0px;
+    width: 100px;
+    text-align: center;
 }
 #pundit-fth-save-button {
-	float: right;
+    float: right;
 }
 #pundit-fp-fast-text-handler li { 
     width: 100%; 
@@ -2906,10 +2906,24 @@ ul.pundit-vertical-list li{
     display: none;
 }
 .pundit-fth-container.pundit-fth-state-0 #pundit-fth-save-button {
-	display: none;
+    display: none;
 }
 
 #pundit-fp-commentTag {
     z-index:1999;
     text-align: left;
+}
+
+/* Custom css under GSoC */
+body .pundit-push-wikidata-icon {
+    background: url('img/wikidata.ico') no-repeat 0px 0px;
+    background-size: 16px 16px;
+}
+body .push-to-wikidata a{
+    color: #009bff;
+    text-decoration: none;
+}
+body .push-to-wikidata a:visited {
+    color: #009bff;
+    text-decoration: none;
 }

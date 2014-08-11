@@ -23,7 +23,7 @@
         l = document.createElement('link');
 
     l.rel = 'stylesheet';
-    l.href = 'https://as.thepund.it/bm/demo-philosophers/css/pundit.css';
+    l.href = 'http://as.thepund.it/bm/demo-philosophers/css/pundit.css';
     l.type = 'text/css';
     l.media = 'screen';
     l.charset = 'utf-8';
@@ -47,11 +47,11 @@
     djConfig = {
         afterOnLoad: true,
         useXDomain: true,
-        baseUrl: "https://as.thepund.it/bm/demo-philosophers/dojo/",
+        baseUrl: "http://as.thepund.it/bm/demo-philosophers/dojo/",
         require: ["dojo.Bookmarklet"]
     };
     d.type = 'text/javascript';
-    d.src = 'https://as.thepund.it/bm/demo-philosophers/dojo/dojo.xd.js';
+    d.src = 'http://as.thepund.it/bm/demo-philosophers/dojo/dojo.xd.js';
     h.appendChild(d);
 
 })();

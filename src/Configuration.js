@@ -43,7 +43,7 @@ dojo.declare("pundit.Configuration", pundit.BaseComponent, {
          * with /
          * @default http://demo.as.thepund.it:8088/annotationserver/
          */
-        annotationServerBaseURL: 'http://demo.as.thepund.it:8080/annotationserver/',
+        annotationServerBaseURL: 'http://demo-cloud.as.thepund.it:8080/annotationserver/',
 
         /**
          * @property punditConfig.debugAllModules
@@ -312,27 +312,33 @@ dojo.declare("pundit.Configuration", pundit.BaseComponent, {
              */
             'selectors': {
                 'Freebase': {
-                    name: 'freebase', label: 'Freebase', active: true
+                    name: 'freebase', label: 'Freebase', active: false
                 },
                 'DBPedia': {
-                    name: 'dbpedia', label: 'DBPedia', active: true
+                    name: 'dbpedia', label: 'DBPedia', active: false
                 },
                 'KorboBasket': {
                     name: 'korbo', label: 'Korbo', active: false
                 },
                 'Wordnet': {
-                    name: 'wordnet', label: 'Word Net', active: true
+                    name: 'wordnet', label: 'Word Net', active: false
                 },
                 'Europeana': {
                     name: 'europeana', label: 'Europeana', active: false
                 },
                 'EuropeanaEDM': {
-                    name: 'europeanaedm', label: 'Europeana EDM', active: true
+                    name: 'europeanaedm', label: 'Europeana EDM', active: false
                 },
                 // DEBUG: not ready for prime time, keep it active = false !
                 'BibServer': {
                     name: 'bibserver', label: 'BibServer', active: false
-                }
+                },
+                'WikidataItems':{
+                    name: 'wikidataItems', label: 'Wikidata Items', active: true
+                },
+                'WikidataProperties':{
+                    name: 'wikidataProperties', label: 'Wikidata Properties', active: true
+                },
                 
             },
 

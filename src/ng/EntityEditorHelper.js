@@ -31,11 +31,6 @@ dojo.declare("pundit.ng.EntityEditorHelper", pundit.BaseComponent, {
         // Korbo2 API endpoint
         endpoint: "http://demo-cloud.api.korbo.org/v1",
         basketID: 1,
-        updateTime: 1000,
-        labelMinLength: 3,
-        visualizeUseButton: ['freebase', 'korbo'],
-        visualizeCopyButton: ['freebase', 'korbo'],
-        visualizeEditButton: true,
 
         // Name of the global object which will be created
         globalObjectName: 'EE',
@@ -95,12 +90,7 @@ dojo.declare("pundit.ng.EntityEditorHelper", pundit.BaseComponent, {
                 self.registerCallbacks();
             },
             providers: self.opts.providers,
-            type: self.opts.types,
-            visualizeUseButton: self.opts.visualizeUseButton,
-            visualizeCopyButton: self.opts.visualizeCopyButton,
-            visualizeEditButton: self.opts.visualizeEditButton,
-            updateTime: self.opts.updateTime,
-            labelMinLength: self.opts.labelMinLength
+            type: self.opts.types
         };
         
         dojo.place('<div ng-app="KorboEE"><korbo-entity-editor conf-name="PunditEEConf"></korbo-entity-editor></div>', dojo.query('body')[0], 'first');

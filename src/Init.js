@@ -281,6 +281,8 @@ dojo.declare("pundit.Init", pundit.BaseComponent, {
             dojo.require("pundit.selectors.BibServerSelector");
             dojo.require("pundit.selectors.DandelionGeoSelector");
             dojo.require("pundit.selectors.DandelionPOISelector");
+            dojo.require("pundit.selectors.WikidataItemsSelector");
+            dojo.require("pundit.selectors.WikidataPropertiesSelector");
         }
 
         // Used for other components initialization

@@ -54,12 +54,6 @@ dojo.declare("pundit.MyItems", pundit.Items, {
             for (var i = favoriteItems.value.length; i--;) {
                 var item = favoriteItems.value[i];
                 
-                // MyItems are messed up: probably accessed by Pundit2 
-                if (typeof(item.rdftype) === "undefined") {
-                    console.log('MyItems are messed up: leaving it empty');
-                    break;
-                }
-                
                 // Check if item is a fragment that can be resolved in the current page
                 // TODO DEBUG: x marco type ns.image???!!
                 if (!tooltip_viewer.isTempXpointer(item.value) &&
@@ -96,7 +90,6 @@ dojo.declare("pundit.MyItems", pundit.Items, {
                 _PUNDIT.init.doneBeforeInit(self.loadJobId);
                 self.loadJobId = null;
             }
-            _PUNDIT.loadingBox.setJobOk(self.readJobId);
         });
         
         // DEBUG TODO: marco wtf is this?!!
