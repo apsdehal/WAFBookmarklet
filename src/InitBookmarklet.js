@@ -23,7 +23,7 @@
         l = document.createElement('link');
 
     l.rel = 'stylesheet';
-    l.href = 'http://as.thepund.it/bm/demo-philosophers/css/pundit.css';
+    l.href = 'http://raw.githubusercontent.com/apsdehal/WAFBookmarklet/master/css/pundit.css';
     l.type = 'text/css';
     l.media = 'screen';
     l.charset = 'utf-8';
@@ -47,11 +47,11 @@
     djConfig = {
         afterOnLoad: true,
         useXDomain: true,
-        baseUrl: "http://as.thepund.it/bm/demo-philosophers/dojo/",
+        baseUrl: "http://raw.githubusercontent.com/apsdehal/WAFBookmarklet/master/dojo/",
         require: ["dojo.Bookmarklet"]
     };
     d.type = 'text/javascript';
-    d.src = 'http://as.thepund.it/bm/demo-philosophers/dojo/dojo.xd.js';
+    d.src = 'http://raw.githubusercontent.com/apsdehal/WAFBookmarklet/master/dojo/dojo.xd.js';
     h.appendChild(d);
 
 })();
