@@ -186,10 +186,7 @@
                 // and consolidating annotations
                 ignoreClasses: ['cons', 'pundit-icon-annotation']
             }
-
         }
-        }
-
     };
 
     djConfig = {
