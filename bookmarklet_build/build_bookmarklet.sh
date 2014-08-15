@@ -8,7 +8,7 @@ ver=`head -1 ../VERSION.txt`
 # - dojo/ folder with the compiled bookmarklet
 # - css/ folder
 ## WITHOUT trailing slash (/)
-bmpath=http://apsdehal.in/WAFBookmarklet/bookmarklet
+bmpath=https://cdn.rawgit.com/apsdehal/WAFBookmarklet/master/bookmarklet
 
 ###########################################
 ### Dont touch anything below this line ###
