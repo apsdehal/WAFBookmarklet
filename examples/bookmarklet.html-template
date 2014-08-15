@@ -25,7 +25,7 @@
         
         <div id = "pundit-main-content" style="margin-left:5px">
             <br/><br/>
-            <p>Drag this bookmarklet to your bookmark bar to launch Wikidata Web Annotator on every Web site.</p>
+            <p>Drag this bookmarklet to your bookmark bar to launch Wikidata Web Annotator on any Web site.</p>
             <span class="easy_RDFa_bookmarklet">
                 <a title="Bookmark this link" href="javascript:(function(){
                         var h = document.getElementsByTagName('head')[0],
