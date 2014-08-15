@@ -55,7 +55,7 @@ dojo.declare("pundit.NamedContentHandler", pundit.BaseComponent, {
             var h = document.getElementsByTagName('head')[0],
             d = document.createElement('script');
             d.type = 'text/javascript';
-            d.src = 'https://raw.github.com/digitalbazaar/jsonld.js/master/js/jsonld.js';
+            d.src = 'https://cdn.rawgit.com/digitalbazaar/jsonld.js/master/js/jsonld.js';
             h.appendChild(d);
             d.onload = function() {
                 self.log('Loaded JSONLD library: checking for named content');
