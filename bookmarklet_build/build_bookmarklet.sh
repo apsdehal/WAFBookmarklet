@@ -42,6 +42,14 @@ echo "Preparing examples/bookmarklet.html for ${bmpath}"
 sed "s%{bm-abs-path}%${bmpath}%g" ../examples/bookmarklet.html-template > ../examples/bookmarklet.html
 echo .
 
+cd ../
+echo "Creating bookmarklet at ${pwd}/bookmarklet"
+rm -r bookmarklet
+mkdir -p bookmarklet/src
+cp src/InitBookmarklet.js bookmarklet/src/
+cp -r bookmarklet_build/dojo bookmarklet/
+cp -r css bookmarklet/
+cp examples/bookmarklet.html bookmarklet/
 
 echo .
 echo "Pundit bookmarklet build is ready at ${pwd}/dojo"
