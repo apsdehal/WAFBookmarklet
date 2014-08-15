@@ -23,7 +23,7 @@
         l = document.createElement('link');
 
     l.rel = 'stylesheet';
-    l.href = 'https://rawgithub.com/apsdehal/WAFBookmarklet/master/bookmarklet/css/pundit.css';
+    l.href = 'http://apsdehal.in/WAFBookmarklet/bookmarklet/css/pundit.css';
     l.type = 'text/css';
     l.media = 'screen';
     l.charset = 'utf-8';
@@ -192,11 +192,11 @@
     djConfig = {
         afterOnLoad: true,
         useXDomain: true,
-        baseUrl: "https://rawgithub.com/apsdehal/WAFBookmarklet/master/bookmarklet/dojo/",
+        baseUrl: "http://apsdehal.in/WAFBookmarklet/bookmarklet/dojo/",
         require: ["dojo.Bookmarklet"]
     };
     d.type = 'text/javascript';
-    d.src = 'https://rawgithub.com/apsdehal/WAFBookmarklet/master/bookmarklet/dojo/dojo.xd.js';
+    d.src = 'http://apsdehal.in/WAFBookmarklet/bookmarklet/dojo/dojo.xd.js';
     h.appendChild(d);
 
 })();
