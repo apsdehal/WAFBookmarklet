@@ -120,7 +120,7 @@
             
             'pundit.Help': {
                 introductionFile: 'example-introduction.html',
-                introductionWindowTitle: 'Welcome to Pundit examples! :)',
+                introductionWindowTitle: 'Welcome to Wikidata Web Annotator!',
                 showIntroductionAtLogin: true
             },
             

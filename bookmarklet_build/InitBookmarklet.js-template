@@ -119,10 +119,9 @@
             /* TODO: comments about it? */
             
             'pundit.Help': {
-                introductionFile: undefined,
-                introductionWindowTitle: '',
-                showIntroductionAtLogin: false,
-                active: true
+                introductionFile: 'example-introduction.html',
+                introductionWindowTitle: 'Welcome to Wikidata Web Annotator!',
+                showIntroductionAtLogin: true
             },
             
             'pundit.ContactHelper': {
