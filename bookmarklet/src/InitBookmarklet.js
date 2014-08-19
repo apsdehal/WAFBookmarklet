@@ -119,10 +119,9 @@
             /* TODO: comments about it? */
             
             'pundit.Help': {
-                introductionFile: undefined,
-                introductionWindowTitle: '',
-                showIntroductionAtLogin: false,
-                active: true
+                introductionFile: 'example-introduction.html',
+                introductionWindowTitle: 'Welcome to Pundit examples! :)',
+                showIntroductionAtLogin: true
             },
             
             'pundit.ContactHelper': {
