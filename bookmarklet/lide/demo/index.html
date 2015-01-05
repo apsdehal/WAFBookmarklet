@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en" class="no-js">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <title>jQuery slideReveal Plugin Demos</title>
+    <style type="text/css">
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        background-color: #f1f1f1;
+      }
+      body div{
+        padding: 10px;
+      }
+      .slider{
+        background-color: #e74c3c;
+        color: white;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../src/slidereveal.js"></script>
+  </head>
+  <body>
+    <div id="slider" class="slider">
+      Hello World!!
+      <!-- <button>&times;</button> -->
+    </div>
+    <div id="slider2" class="slider">
+      Hello World!!
+      <!-- <button>&times;</button> -->
+    </div>
+    <div class="container">
+    <h1>jQuery slideReveal Plugin Demos</h1>
+    <div class="jquery-script-ads" style="margin:30px auto;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+    <div class="row">
+    <button id="trigger2" class="btn btn-success">Trigger a left overlay panel</button>
+    <button id="trigger" class="btn btn-danger">Trigger a right push panel</button>  
+    
+    </div>
+    <div class="row">
+      Adipiscing in turpis, adipiscing porta massa. Ridiculus urna diam. Ridiculus dignissim aliquet! Mid in lorem platea mus egestas lectus rhoncus odio phasellus, tristique, nisi ultricies aliquet, sit magna cursus dolor.
+
+      Velit! Odio? Aenean est ultricies. Tortor adipiscing urna ridiculus cras enim dignissim ac aliquam scelerisque quis sit a ac, eu turpis pid odio mattis. Odio in in tincidunt massa.
+
+      Integer? Enim augue et, ultricies? Integer nunc odio, elit pellentesque tincidunt? Quis amet augue ridiculus, natoque nec platea porttitor? Tempor aliquet non, dolor, sed ultrices dignissim duis, mauris, augue.
+
+      Adipiscing in turpis, adipiscing porta massa. Ridiculus urna diam. Ridiculus dignissim aliquet! Mid in lorem platea mus egestas lectus rhoncus odio phasellus, tristique, nisi ultricies aliquet, sit magna cursus dolor.
+
+      Velit! Odio? Aenean est ultricies. Tortor adipiscing urna ridiculus cras enim dignissim ac aliquam scelerisque quis sit a ac, eu turpis pid odio mattis. Odio in in tincidunt massa.
+
+      Integer? Enim augue et, ultricies? Integer nunc odio, elit pellentesque tincidunt? Quis amet augue ridiculus, natoque nec platea porttitor? Tempor aliquet non, dolor, sed ultrices dignissim duis, mauris, augue.
+
+      Adipiscing in turpis, adipiscing porta massa. Ridiculus urna diam. Ridiculus dignissim aliquet! Mid in lorem platea mus egestas lectus rhoncus odio phasellus, tristique, nisi ultricies aliquet, sit magna cursus dolor.
+
+      Velit! Odio? Aenean est ultricies. Tortor adipiscing urna ridiculus cras enim dignissim ac aliquam scelerisque quis sit a ac, eu turpis pid odio mattis. Odio in in tincidunt massa.
+
+      Integer? Enim augue et, ultricies? Integer nunc odio, elit pellentesque tincidunt? Quis amet augue ridiculus, natoque nec platea porttitor? Tempor aliquet non, dolor, sed ultrices dignissim duis, mauris, augue.
+
+      Adipiscing in turpis, adipiscing porta massa. Ridiculus urna diam. Ridiculus dignissim aliquet! Mid in lorem platea mus egestas lectus rhoncus odio phasellus, tristique, nisi ultricies aliquet, sit magna cursus dolor.
+
+      Velit! Odio? Aenean est ultricies. Tortor adipiscing urna ridiculus cras enim dignissim ac aliquam scelerisque quis sit a ac, eu turpis pid odio mattis. Odio in in tincidunt massa.
+
+      Integer? Enim augue et, ultricies? Integer nunc odio, elit pellentesque tincidunt? Quis amet augue ridiculus, natoque nec platea porttitor? Tempor aliquet non, dolor, sed ultrices dignissim duis, mauris, augue.
+
+      Adipiscing in turpis, adipiscing porta massa. Ridiculus urna diam. Ridiculus dignissim aliquet! Mid in lorem platea mus egestas lectus rhoncus odio phasellus, tristique, nisi ultricies aliquet, sit magna cursus dolor.
+
+      Velit! Odio? Aenean est ultricies. Tortor adipiscing urna ridiculus cras enim dignissim ac aliquam scelerisque quis sit a ac, eu turpis pid odio mattis. Odio in in tincidunt massa.
+
+      Integer? Enim augue et, ultricies? Integer nunc odio, elit pellentesque tincidunt? Quis amet augue ridiculus, natoque nec platea porttitor? Tempor aliquet non, dolor, sed ultrices dignissim duis, mauris, augue.
+    </div>
+    <script type="text/javascript">
+    	$(function(){
+        slider = $("#slider").slideReveal({
+          // width: 100,
+          // push: false,
+          position: "right",
+          speed: 600,
+          trigger: $("#trigger"),
+          // autoEscape: false,
+          show: function(obj){
+            console.log(obj);
+          },
+          shown: function(obj){
+            console.log(obj);
+          },
+          hide: function(obj){
+            console.log(obj);
+          },
+          hidden: function(obj){
+            console.log(obj);
+          }
+        });
+
+        slider2 = $("#slider2").slideReveal({
+          // width: 100,
+          push: false,
+          position: "left",
+          speed: 600,
+          trigger: $("#trigger2")
+        });
+
+        setTimeout(function(){
+          slider.slideReveal("show", false);
+        }, 1000);
+
+        setTimeout(function(){
+          slider.slideReveal("hide", false);
+        }, 3000);
+    	});
+
+      /*
+      Then you call:
+      $("#slider").slideReveal("show");
+      $("#slider").slideReveal("hide");
+      */
+	 
+    </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    </div>
+  </body>
+</html>
