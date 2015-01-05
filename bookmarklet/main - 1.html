@@ -11,9 +11,15 @@
 	<body>
 		
 		<div id = "header">
-			Wikidata Web Annotator<br/><span id="sm-head">Show Index</span>
+			Wikidata Web Annotator<br/>
+			<center><table><tr>
+			<td><div id = "left"><img src = "Left.png" class = "arrow"></img></div></td>
+			<td><div id = "help"><b>Use the arrow keys <br/>or these buttons to navigate.</b><br/><br/><span id = "sm-head">Click here for the index</span></div></td>
+			<td><div id = "right"><img src = "Right.png" class = "arrow"></img></div></td></tr></table>
+			</center>
 		</div>
 		<div id = "index">
+				<div id ="head"><b>WWA Nav</b></div>
 				<a href = "#/desc"><div class = "link">Home</div></a>
 				<a href = "#/uses"><div class = "link">Uses for WWA</div></a>
 				<a href = "#/tut-start"><div class = "link">How to Setup</div></a>
@@ -103,6 +109,15 @@
 			</div>
 		</div>
 		<script src = "impress/js/impress.js"></script>
-		<script>impress().init();</script>
+		<script>
+			impress().init();
+			$("#left").click(function(){
+				impress().prev();
+			});
+			$("#right").click(function(){
+				impress().next();
+			});
+				
+		</script>
 	</body>
 </html>
