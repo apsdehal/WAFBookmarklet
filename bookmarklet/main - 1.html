@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<title>Wikidata Web Annotator</title>
+		<script src = "jquery-1.11.2.min.js"></script>
+		<script src = "lide/src/slidereveal.js"></script>
+		
+		<link rel = "stylesheet" type = "text/css" href = "style - 1.css">
+		
+	</head>
+
+	<body>
+		
+		<div id = "header">
+			Wikidata Web Annotator<br/>
+			<center><table><tr>
+			<td><div id = "left"><img src = "Left.png" class = "arrow"></img></div></td>
+			<td><div id = "help"><b>Use the arrow keys <br/>or these buttons to navigate.</b><br/><br/><span id = "sm-head">Click here for the index</span></div></td>
+			<td><div id = "right"><img src = "Right.png" class = "arrow"></img></div></td></tr></table>
+			</center>
+		</div>
+		<div id = "index">
+				<div id ="head"><b>WWA Nav</b></div>
+				<a href = "#/desc"><div class = "link">Home</div></a>
+				<a href = "#/uses"><div class = "link">Uses for WWA</div></a>
+				<a href = "#/tut-start"><div class = "link">How to Setup</div></a>
+				<a href = "#/walk"><div class = "link">Tutorial</div></a>
+				<a href = "#/celebrate"><div class = "link">Celebrate!</div></a>
+				<a href = "#/dev"><div class = "link">Developers</div></a>
+			
+		</div>
+		<script>
+			$('#index').slideReveal({
+				trigger: $('#sm-head'),
+				show: function(){
+					$('#sm-head').text('Hide Index');
+					},
+				hide: function(){
+					$('#sm-head').text('Show Index');
+					},
+				push: false,
+				width: 200
+			});
+		</script>
+		
+		<div id = "impress">
+			<div class = "step" id = "desc">
+				<h1>What is<br/>
+				<b style="font-size:35px;">Wikidata Web Annotator?</b></h1>
+				Wikidata Web Annotator, or WWA, is a annotator that stores, connects, and allows you to comment on 
+				annotations you have created. It was created to bring better participation by the commuinty in creating better annotations for wikimedia stuff.
+			</div>
+			<div class = "step" id = "uses" data-y = 1200>
+				<h1>What can I do with</br>
+				<b style="font-size:35px;">Wikidata Web Annotator?</b></h1>
+				There is a lot you can do: 
+				<ul style="text-align:left; list-style-type: circle;">
+				<li>-Use the internet as your bibliography.</li>
+				<li>-Create annotations for Wikidata stuff.</li>
+				<li>-Link websites and web pagesthrough annotations.</li>
+				<li>-Fix your annotations.</li>
+				<li>-Find the cure to cancer. (55555555th page of google. Trust me.)</li>
+				<li>-Other awesome stuff</li>
+				</ul>
+			</div>
+			<div class = "step" id = "tut-start" data-y = 2400>
+				<h1>How do I set-up</br>
+				<b style="font-size:35px;">Wikidata Web Annotator?</b></h1>
+				<b style="font-size:20px;">#1:</b>
+				<br/><b>What you must do</b>
+				<br/>Take this link, and drag it to your bookmark bar.
+				<div class = "book">
+					<a href="javascript:(function(){var h = document.getElementsByTagName('head')[0],
+								d = document.createElement('script');
+								d.type = 'text/javascript';
+								d.src = 'https://cdn.rawgit.com/apsdehal/WAFBookmarklet/master/bookmarklet/src/InitBookmarklet.js?'+Math.random()*4;
+								d.async = false;
+								h.appendChild(d);
+							})()">
+					
+					<b style="font-size:14px">Wikidata Web Annotator</b>
+					
+					</a>
+				</div>
+				<b style="font-size:20px;">#2:</b>
+				<br/><b>What you do with it</b>
+				<br/>Go to any website, click on the bookmark, log in, and highlight what you want to annotate.
+				
+			</div>
+			<div class = "step" id = "walk" data-y = 3600>
+				<h1>No really, how do I use<br/>
+				<b style="font-size:35px;">Wikidata Web Annotator?</b></h1>
+				Ok, but I won't tell you, I will show you. Follow the steps above on this website. After you are sure that you have logged in, highlight part of the paragraph below.
+				<p style="font-size:13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae arcu nulla. Etiam tincidunt felis eu massa gravida convallis. Etiam elementum, orci ac suscipit ullamcorper, ante est scelerisque nunc, sit amet finibus nisi lacus eu nisl. Sed sed commodo augue, nec malesuada nisl. Praesent a fermentum quam. Cras commodo lorem quis lectus sodales rhoncus. Nullam enim purus, rhoncus ut purus sit amet, varius hendrerit mi.</p>
+				Now, you should see a box after the highlight. Click on "Add Comment or Tags". A box should open up that allows you to input text. Input what you think that snippet of text means. Press save. You have successfully made an annotation.
+			</div>
+			<div class = "step" id = "celebrate" data-y = 4800>
+				<h1>Take two minutes and<br/>
+				<b style="font-size:70px; color:red; text-align:center;">CELEBRATE</b>
+				You probably have better things to do, like getting started on annotating, but do it anyway.</h1>
+			</div>
+			<div class = "step" id = "dev" data-y = 7000>
+			<h1> <br/>Be sure to thank these awesome<br/> people who made this software possible
+			<ul>
+			<!-- insert Devs here -->
+			<li>Awesome person 1</li>
+			<li>Awesome person 2</li>
+			</h1>
+			</ul>
+			</div>
+		</div>
+		<script src = "impress/js/impress.js"></script>
+		<script>
+			impress().init();
+			$("#left").click(function(){
+				impress().prev();
+			});
+			$("#right").click(function(){
+				impress().next();
+			});
+				
+		</script>
+	</body>
+</html>
